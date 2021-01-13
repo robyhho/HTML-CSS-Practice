@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-style: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Navigation styles */
+
+.navigation {
+  width: 100%;
+  min-height: 56px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuLogo {
+  margin-top: 3%;
+  height: 50px;
+}
+
+.searchBar {
+  width: 80%;
+}
+
+.searchInput,
+.searchBtn {
+  color: grey;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 40%;
+  m
+}
+
+.rightIcons {
+  width: 20%;
+}
+
+/* Main Div Styles */
+
+.main {
+  background-color: blue;
+  width: 75%;
+  min-height: 800px;
+}
+
+.sidebar {
+  background-color: yellow;
+  width: 25%;
+}
+
+.footer {
+  background-color: red;
+  width: 100%;
+}
