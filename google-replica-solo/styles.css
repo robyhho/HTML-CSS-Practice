@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.shift-left {
+  display: flex;
+}
+
+.shift-left > a {
+  margin-right: 50px;
+  padding: 1rem 1rem 0rem 0rem;
+}
+
+.shift-left > a,
+.shift-right > a {
+  text-decoration: none;
+  color: #222;
+  font-size: 0.9rem;
+}
+
+.shift-left > a:first-child {
+  padding: 1rem 1rem 0rem 2rem;
+}
+
+.shift-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.shift-right > a {
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.shift-right-text {
+  padding-top: 0.3rem;
+}
+
+.shift-right-app {
+  padding-top: 0.2rem;
+}
+
+.channel-icon {
+  border-radius: 50%;
+}
+
+.logo-div {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.google-logo {
+  display: block;
+  border-radius: 1%;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+}
+.search-input {
+  position: relative;
+  width: 40%;
+  height: 40px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  border-radius: 50px;
+}
+
+.search-image {
+  position: fixed;
+  top: 47%;
+  left: 22%;
+  color: rgba(210, 210, 210, 1);
+  opacity: 50%;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.search-button {
+  margin-right: 10px;
+  padding: 0.5rem 0.8rem;
+  background-color: #f7f7f7;
+  border: none;
+  color: rgba(50, 50, 50, 0.8);
+}
+
+.footer {
+  background: #f2f2f2;
+  color: #828282;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.footer-text {
+  width: 100%;
+}
+
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+  align-items: baseline;
+}
+
+.footer-left-side,
+.footer-right-side {
+  display: flex;
+}
+
+.footer-left-side > a,
+.footer-right-side > a {
+  text-decoration: none;
+  color: #828282;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.first-item {
+  padding-left: 1rem;
+}
