@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.searchBar {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem 0 4rem;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid #777;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-input-button {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.nav-right-side {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  justify-items: right;
+}
+
+.nav-right-side-image {
+  padding: 2px;
+  margin: 0.1rem 1rem;
+  margin-top: 5px;
+}
+
+.header-icon {
+  border-radius: 50%;
+}
+
+.yt-logo {
+  height: 30px;
+  margin-top: 5px;
+}
+
+.video-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3rem, 1rem;
+  margin: 1rem 1rem;
+  padding: 0.1rem;
+  padding-top: 20px;
+  border-top: 1px solid #808080;
+}
+
+.section-header-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: black;
+  padding: 1rem 0;
+}
+
+.section-header-button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.section-header {
+  grid-column: 1 / -1;
+  margin: -0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.group-buttons {
+  display: flex;
+  overflow: hidden;
+  word-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+.group-buttons > a {
+  text-decoration: none;
+  background: rgb(231, 231, 231);
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 900px;
+  margin: 5px;
+}
+
+.group-buttons > a:first-child {
+  background: black;
+  color: white;
+  padding: 0.5rem 0.7rem;
+}
+
+.video-section:first-child {
+  border-top: none;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: flex;
+}
+
+.video-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  min-height: 150px;
+  background-color: #aaa;
+}
+
+.video-thumbnail::before {
+  content: attr(data-duration);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.1rem;
+  border-radius: 4px;
+  bottom: 2px;
+  right: 5px;
+}
+
+.video-bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.channel-icon {
+  border-radius: 50%;
+  padding: 0 0.5rem;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title,
+.video-channel-name {
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+}
+
+.video-title {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.video-channel-name,
+.video-meta-data {
+  color: #808080;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .searchBar {
+    flex-grow: 0.5;
+  }
+  .nav-right-side {
+    padding-right: 1rem;
+  }
+}
