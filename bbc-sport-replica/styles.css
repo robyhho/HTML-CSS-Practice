@@ -1,0 +1,404 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Reithsans, Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Top Nav Bar */
+
+.top-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vh;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  padding-left: 10px;
+}
+
+.account-info > a {
+  border-left: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.account-icon {
+  padding-right: -30px;
+  height: 20px;
+}
+
+.bbc-logo {
+  height: 20px;
+  margin: 5px 0 5px 5px;
+}
+
+.account-icon {
+  height: 15px;
+  border-radius: 50%;
+}
+
+.noti-icon {
+  height: 20px;
+}
+.top-nav-item {
+  text-decoration: none;
+  color: black;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  padding-right: 10px;
+  font-size: 0.6rem;
+  padding-left: 10px;
+}
+
+.more-tab :first-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.more-tab :last-child {
+  border-left: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.more-tab {
+  padding-right: 1px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input-box {
+  background-color: #f8f8f8;
+  border: 1px solid #808080;
+}
+
+.search-input-img {
+  position: absolute;
+  right: 5px;
+  height: 20px;
+}
+
+/*  Sports-NavBar Styles  */
+
+.nav-bar {
+  padding: 10px;
+  background-color: #fad02c;
+  width: 150vh;
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.sport-title {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+
+.sport-nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#selected {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-weight: bold;
+}
+
+.all-section {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  margin-left: 15px;
+  gap: 0.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.all-section > a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.all-section > img {
+  height: 15px;
+}
+
+.sport-nav-bar-item {
+  text-decoration: none;
+  color: black;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  padding-left: 10px;
+}
+/* Main body Styles */
+
+.main-body {
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+}
+
+.left-side {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 0.2rem 0.1rem;
+  padding: 20px;
+  width: 60%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 3;
+  grid-row: 2 / 5;
+}
+
+/* Headline Container Styles */
+.headline-container {
+  grid-column: 1 / 8;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+}
+
+.headline-image {
+  width: 400px;
+}
+
+.headline-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.headline-title,
+.headline-text {
+  text-decoration: none;
+  color: #808080;
+}
+
+.headline-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.headline-title:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.headline-meta-data {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+  margin-left: -20px;
+  margin-top: 50px;
+}
+.clock-img,
+.comment-img,
+.article-clock-img {
+  height: 16px;
+}
+
+.headline-time {
+  display: flex;
+  border-right: 1px solid gray;
+  padding-right: 20px;
+}
+
+.headline-time-value {
+  color: #808080;
+}
+
+.meta-sport {
+  text-decoration: none;
+  color: green;
+}
+
+.meta-sport:hover,
+.article-meta-sport:hover {
+  text-decoration: underline;
+}
+
+.comments {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.comment-img {
+  border-left: 1px solid gray;
+  padding-left: 10px;
+}
+
+.comment-num {
+  text-decoration: none;
+  color: #808080;
+}
+
+/* Article Styles */
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article-title {
+  text-decoration: none;
+  color: #808080;
+  font-size: 1.2rem;
+  width: 260px;
+}
+
+.article-title:hover {
+  text-decoration: underline;
+}
+
+.article-meta-data {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-time {
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid gray;
+  padding-right: 20px;
+}
+
+.article-time-value {
+  color: #808080;
+}
+
+.article-meta-sport {
+  text-decoration: none;
+  color: green;
+  padding-left: 20px;
+}
+
+.article-clock-img {
+  padding-left: 5px;
+}
+
+/* Right side styles */
+
+.right-side {
+  width: 70%;
+}
+
+.league-section {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.football-title {
+  font-weight: normal;
+  padding-right: 10px;
+}
+
+.league-title,
+.league-more {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.league-title {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.league-more {
+  text-decoration: none;
+  color: green;
+}
+
+.league-more-section {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.football-date {
+  margin-top: 20px;
+  padding: 10px 20px 10px 0;
+  font-size: 0.7rem;
+  background-color: #e7e6e6;
+}
+
+.match-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.match-time {
+  background-color: #e7e6e6;
+  padding: 5px;
+}
+
+.team-name {
+  font-size: 0.8rem;
+}
+
+.score-link {
+  text-decoration: none;
+  margin: 10px 0;
+  color: black;
+}
+
+.unmissable-title {
+  font-weight: normal;
+}
+
+.unmissable-article {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+}
+
+.unmissable-article-text {
+  width: 100px;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.unmissible {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+
+.speaker-icon {
+  position: absolute;
+  bottom: -16px;
+  background-color: white;
+  padding: 1px;
+}
