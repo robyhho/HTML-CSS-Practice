@@ -102,6 +102,10 @@ body {
   color: var(--primary-color-bright-blue);
 }
 
+.plan-change:hover {
+  opacity: 0.5;
+}
+
 .btn-payment {
   border: none;
   padding: 1rem 6rem;
@@ -114,12 +118,20 @@ body {
   box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
 }
 
+.btn-payment:hover {
+  opacity: 0.5;
+}
+
 .btn-cancel {
   border: none;
   background: none;
   margin: 2rem;
   font-size: 1rem;
   color: var(--neutral-color-desaturated-blue);
+}
+
+.btn-cancel:hover {
+  color: black;
 }
 
 .attribution {
