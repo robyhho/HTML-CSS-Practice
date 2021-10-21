@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: hsl(318, 100%, 98%);
+  color: var(--primary-desaturated-red);
+  font-weight: 300;
+}
+
+:root {
+  --primary-desaturated-red: hsl(0, 36%, 70%);
+  --primary-soft-red: hsl(0, 93%, 68%);
+
+  --neutral-dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+::placeholder {
+  color: var(--primary-desaturated-red);
+  text-indent: 20px;
+  opacity: 0.4;
+  font-size: 15px;
+}
+
+/* Header styles */
+.logo {
+  padding: 2rem;
+  height: 90px;
+}
+
+/* main-section styles */
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  background-image: url(images/hero-mobile.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15rem;
+}
+
+.main-bottom {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-text {
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  color: var(--neutral-dark-grayish-red);
+}
+
+.title-accent {
+  padding: 0;
+  margin-top: 4rem;
+  font-weight: lighter;
+  color: var(--primary-desaturated-red);
+}
+
+.main-text {
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+/* Email div styles */
+
+.email-div {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+}
+
+.email-input {
+  width: 100%;
+  border-radius: 25px;
+  height: 3rem;
+  border: 1px solid var(--primary-desaturated-red);
+  background-color: inherit;
+}
+
+.email-btn {
+  position: absolute;
+  right: 0;
+  height: 3rem;
+  width: 4rem;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.email-btn:hover {
+  transform: scale(1.2);
+  filter: brightness(120%);
+  box-shadow: 0 2.8px 2.2px rgba(187, 137, 137, 0.034),
+    0 6.7px 5.3px rgba(187, 137, 137, 0.048),
+    0 12.5px 10px rgba(187, 137, 137, 0.06),
+    0 22.3px 17.9px rgba(187, 137, 137, 0.072),
+    0 41.8px 33.4px rgba(187, 137, 137, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.result-text {
+  color: var(--primary-soft-red);
+  font-size: 14px;
+  opacity: 0.8;
+  margin-left: -4rem;
+}
+
+.email-exclamation {
+  position: absolute;
+  right: 5rem;
+  top: 0.7rem;
+}
+
+/* Attribution styles */
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media (min-width: 500px) {
+  body {
+    width: 50%;
+  }
+
+  header {
+    padding-top: 2rem;
+  }
+
+  .logo {
+    padding-left: 9rem;
+    height: 6rem;
+  }
+
+  .main-section {
+    text-align: start;
+    align-items: start;
+    padding-left: 4rem;
+  }
+
+  .title {
+    align-items: start;
+    padding-top: 1rem;
+  }
+
+  .title-text {
+    font-size: 5rem;
+    padding-left: 8rem;
+  }
+
+  .main-text {
+    padding-left: 4rem;
+    padding-top: 1rem;
+  }
+
+  .main-image {
+    background-image: url(images/hero-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1000px;
+  }
+  /* Email section */
+  .email-div {
+    padding-top: 2rem;
+    padding-left: 4rem;
+  }
+
+  .email-btn {
+    width: 5rem;
+  }
+
+  .result-text {
+    margin-left: -7rem;
+  }
+
+  .email-exclamation {
+    right: 6rem;
+    top: 2.7rem;
+  }
+
+  .attribution {
+    padding-top: 100px;
+  }
+}
