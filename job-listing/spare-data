@@ -1,0 +1,30 @@
+<div class="job-listing">
+    <img src="./images/photosnap.svg" alt="company-logo" class="company-icon">
+    <div class="job-data">
+      <div class="job-top">
+        <p class="company-name">Photosnap</p>
+        <p class="new">NEW!</p>
+        <p class="featured">Featured</p>
+      </div>
+      <p class="job-title">Senior Frontend Developer</p>
+      <div class="job-bottom">
+        <span>1d ago</span>
+        ·
+        <span>Full Time</span>
+        ·
+        <span>USA only</span>
+      </div>
+      <hr>
+    </div>
+    <div class="job-tags">
+      <!-- Role -->
+
+      <p class="tag">Frontend</p>
+      <!-- Level -->
+      <p class="tag">Senior</p>
+      <!-- Languages -->
+      <p class="tag">HTML</p>
+      <p class="tag">CSS</p>
+      <p class="tag">JavaScript</p>
+    </div>
+  </div>
